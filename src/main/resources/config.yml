@@ -1,0 +1,72 @@
+enable: false
+qqGroupNumber: 0
+bot:
+  name: "bot-1"
+  postUrl: 127.0.0.1
+  postPort: 5700
+  listenPort: 31092
+  accessToken: ""
+  secret: ""
+  apiAsync: true
+  apiRateLimited: false
+  noVerify: true
+  debug: false
+qqChatToGame:
+  enable: true
+  useGroupCard: true
+  format: "§1[QQ]${name}: §r${message}"
+  removeColorInMessage: false
+  cqCode:
+    removeAll: false
+    face:
+      remove: false
+      format: "[系统表情]"
+    emoji:
+      remove: false
+      format: "[emoji]"
+    bface:
+      remove: false
+      format: "[原创表情]"
+    sface:
+      remove: false
+      format: "[小表情]"
+    image:
+      remove: false
+      format: "[图片]"
+    record:
+      remove: false
+      format: "[语音]"
+    at:
+      remove: false
+      format: "@${member}"
+      useGroupCard: true
+    rps:
+      remove: false
+      format: "[猜拳魔法表情]"
+    dice:
+      remove: false
+      format: "[掷骰子魔法表情]"
+    location:
+      remove: false
+      format: "[地点]"
+    sign:
+      remove: false
+      format: "[签到]"
+    music:
+      remove: false
+      format: "[音乐]"
+    share:
+      remove: false
+      format: "${url}"
+    unknown:
+      remove: false
+      format: "[${code}]"
+  ignoreEmptyMessage: true
+  async: true
+gameChatToQQ:
+  enable: true
+  format: "{playerName}: {message}"
+  removeColorInPlayerName: true
+  removeColorInMessage: true
+  ignoreEmptyMessage: true
+  async: true

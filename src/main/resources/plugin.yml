@@ -1,0 +1,17 @@
+name: SpigotCQBridge
+version: 0.0.1
+author: czp3009
+main: com.hiczp.spigot.cqbridge.Main
+api-version: "1.15"
+website: https://github.com/czp3009/Spigot-CQ-Bridge
+description: "Create chat bridge between spigot server and CoolQ via CQHttp"
+commands:
+  cqbridge:
+    aliases: [cqb]
+    usage: /<command> reload
+    permission: cqbridge.reload
+    description: Reload SpigotCQBridge.
+permissions:
+  cqbridge.reload:
+    description: Allows reloading of SpigotCQBridge.
+    default: op
